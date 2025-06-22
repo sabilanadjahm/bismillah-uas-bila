@@ -1,4 +1,12 @@
 // pages/middleware.js
+"use client";
+import { auth } from "@/lib/firebase";
+import { onAuthStateChanged } from "firebase/auth";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
+// ...lanjutan fungsinya
+
 import { auth } from "@/lib/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
